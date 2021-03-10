@@ -2755,7 +2755,7 @@ break
                  case 'play':
                 reply(mess.wait)
                 play = body.slice(5)
-                anu = await fetchJson(`tobz-api.herokuapp.com/api/yta?url=${play}&apikey=APIKEYLU`)
+                anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
                if (anu.error) return reply(anu.error)
                  infomp3 = `*MUSICA ENCONTRADA!!!*\nTítulo : ${anu.result.title}\nUrl : ${anu.result.source}\nTamanho : ${anu.result.size}\n\n*ESPERE UM POUQUINHO, N SPAME O CHAT*`
                 buffer = await getBuffer(anu.result.thumbnail)
