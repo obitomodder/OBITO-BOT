@@ -2,7 +2,7 @@ const help = (prefix) => {
 	return `
 <══════════════════════>
       *OBITO BOT*
- <══════════════════════>
+<══════════════════════>
 
 ● MENU DO BOT ●
 *DONO*: OBITO MODDER
@@ -17,11 +17,9 @@ const help = (prefix) => {
 ║
 ╠══📌〘 MENU 〙📌══
 ║
-║
 ║💥 *${prefix}figu*
 ║💥 *${prefix}toimg*
-║💥 *${prefix}darkjokes (memes aleatórios)*
-║💥 *${prefix}memeindo*
+║💥 *${prefix}darkjokes (shitposts)*
 ║💥 *${prefix}tts*
 ║💥 *${prefix}lolih [on]*
 ║💥 *${prefix}nsfwloli [off]*
@@ -41,7 +39,7 @@ const help = (prefix) => {
 ║💥 *${prefix}rebaixar*
 ║💥 *${prefix}admins*
 ║💥 *${prefix}marcar2*
-║💥 *${prefix}bc [texto]* (ele faz uma ™)
+║💥 *${prefix}bc [texto]* (ele faz um aviso!)
 ║💥 *${prefix}marcar3*
 ║💥 *${prefix}bloqueados*
 ║💥 *${prefix}bloquear [@]*
@@ -49,7 +47,6 @@ const help = (prefix) => {
 ║💥 *${prefix}limpar*
 ║💥 *${prefix}bc [ *texto* ]*
 ║💥 *${prefix}bemvindo [1/0]*
-║💥 *${prefix}clonar [@]*
 ║💥 *${prefix}help1*
 ║💥 *${prefix}dono*
 ║💥 *${prefix}owner*
@@ -58,7 +55,6 @@ const help = (prefix) => {
 ║💥 *${prefix}termux*
 ║💥 *${prefix}setfoto*
 ║💥 *${prefix}grupoinfo*
-║💥 *${prefix}ytmp4*
 ║💥 *${prefix}bomdia*
 ║💥 *${prefix}boanoite*
 ║💥 *${prefix}marcar*
@@ -83,18 +79,21 @@ const help = (prefix) => {
 ║💥 *${prefix}sasuke [aleatórias]*
 ║💥 *${prefix}sakura [aleatórias]*
 ║💥 *${prefix}naruto [aleatórias]*
-║💥 *${prefix}meme*
 ║💥 *${prefix}lofi*
 ║💥 *${prefix}malkova*
 ║💥 *${prefix}canal*
 ║💥 *${prefix}nsfwloli1*
 ║💥 *${prefix}reislin*
 ║
+╠══📌〘 COMANDO PARA BAIXAR VIDEOS/MUSICAS YT 〙📌══
+║
+║💥 *${prefix}ytmp4 (link da musica/video)*
+║
 ╠══📌〘 INTELIGÊNCIA ARTIFICIAL 〙📌══
 ║
 ║💥 *${prefix}simih 1 (para ativar)*
 ║💥 *${prefix}simih 0 (para desativar)*
-║ *${prefix}simi (sua mensagem)*
+║💥 *${prefix}simi (sua mensagem)*
 ║
 ╠══📌〘 EM PRODUÇÃO 〙📌══
 ║
@@ -108,7 +107,7 @@ const help = (prefix) => {
 ║
 ╠══📌〘 SÓ PREMIUM 〙📌══
 ║
-║💥 *${prefix}dado*
+║💥 *${prefix}dado (não é um puxa dados)*
 ║💥 *${prefix}cekvip*
 ║💥 *${prefix}premiumlist*
 ║💥 *${prefix}delete*
@@ -171,7 +170,7 @@ const help = (prefix) => {
 ║💥 *${prefix}moddroid [jogo/app]*
 ║💥 *${prefix}xvideos [titulo]**
 ║💥 *${prefix}nomegp*
-║💥 *${prefix}darkjokes (memes aleatórios)*
+║💥 *${prefix}darkjokes (shitposts)*
 ║💥 *${prefix}animecry*
 ║💥 *${prefix}gay1*
 ║💥 *${prefix}next*
@@ -192,7 +191,8 @@ const help = (prefix) => {
 ║💥 *${prefix}fdp*
 ║💥 *${prefix}onich*
 ║💥 *${prefix}beat1*
-║💥 *${prefix}glub*
+║💥 *${prefix}banido*
+║💥 *${prefix}edbanido*
 ║
 ╠══📌〘 OUTROS /2 〙📌══
 ║
@@ -213,7 +213,6 @@ const help = (prefix) => {
 ║💥 *bv*
 ║💥 *canta ai bot*
 ║💥 *grita*
-║💥 *gemidao*
 ║💥 *musica*
 ║
 ╠══📌〘 OBITO NO CONTROLE 〙📌══
@@ -222,7 +221,6 @@ const help = (prefix) => {
 ║ *INSTA: bezzaokkk*
 ║ *YOUTUBE: https://youtube.com/c/obitomodder*
 ║
-║  *BASE DO CAUSS⚡⚡*
 ║  *TMJ KIBA NÃO PPRT*
 ║
 ╚═〘 ⚡ OBITO BOT ⚡ 〙`
