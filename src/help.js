@@ -3,189 +3,141 @@ const help = (prefix) => {
 <══════════════════════>
       *OBITO BOT*
 <══════════════════════>
-
-● MENU DO BOT ●
-*DONO*: OBITO MODDER
-
 ┌─────────❶.❷────────
-║⚡〘 INFORMAÇÕES 〙⚡
+║
+║⚡〘 *INFORMAÇÕES* 〙⚡
+║
 ║
 ╠⚡ *OBITO BOT* ⚡
-╠⚡ 𝐃𝐎𝐍𝐎:  ⃬⃗OBITO ⚡
-╠⚡ 𝐒𝐓𝐀𝐓𝐔𝐒: ON ⚡
+╠⚡ *𝐃𝐎𝐍𝐎:  ⃬⃗OBITO* ⚡
+╠⚡ *𝐒𝐓𝐀𝐓𝐔𝐒: ON* ⚡
+║⚡
+║⚡ *DIGITE .help1 PARA VER ALGUNS OUTROS COMANDOS* ⚡
 ║
 ║
-╠══📌〘 MENU 〙📌══
+╠════📌〘 *MAIS USADOS* 〙📌════════════════
 ║
-║💥 *${prefix}figu*
-║💥 *${prefix}toimg*
+║
+║💥 *${prefix}f ou .figu (transforma img em fig)*
+║💥 *${prefix}toimg (transforma fig em img)*
 ║💥 *${prefix}darkjokes (shitposts)*
-║💥 *${prefix}tts*
-║💥 *${prefix}lolih [on]*
-║💥 *${prefix}nsfwloli [off]*
-║💥 *${prefix}url2img*
-║💥 *${prefix}leens [na legenda]*
-║💥 *${prefix}wait [na legenda]*
-║💥 *${prefix}setprefix*
+║💥 *${prefix}tts pt (transforma msg em audio)*
+║💥 *${prefix}lolih (manda uma loli)*
+║💥 *${prefix}leens (ele faz um texto bugado)*
+║💥 *${prefix}wait (mande uma lolih em img e ele tentara achar da onde é)*
 ║
-╠══📌〘 OUTROS 〙📌══
 ║
-║💥 *${prefix}linkgp*
-║💥 *${prefix}simih [1/0]*
-║💥 *${prefix}marcar*
-║💥 *${prefix}add [@]*
-║💥 *${prefix}banir [@]*
-║💥 *${prefix}promover [@]*
-║💥 *${prefix}rebaixar*
-║💥 *${prefix}admins*
-║💥 *${prefix}marcar2*
-║💥 *${prefix}bc [texto]* (ele faz um aviso!)
-║💥 *${prefix}marcar3*
-║💥 *${prefix}bloqueados*
-║💥 *${prefix}bloquear [@]*
-║💥 *${prefix}desbloquear [@]*
-║💥 *${prefix}limpar*
-║💥 *${prefix}bc [ *texto* ]*
-║💥 *${prefix}bemvindo [1/0]*
-║💥 *${prefix}help1*
-║💥 *${prefix}dono*
-║💥 *${prefix}owner*
-║💥 *${prefix}tts [texto]*
-║💥 *${prefix}setnome*
-║💥 *${prefix}termux*
-║💥 *${prefix}setfoto*
-║💥 *${prefix}grupoinfo*
-║💥 *${prefix}bomdia*
-║💥 *${prefix}boanoite*
-║💥 *${prefix}marcar*
-║💥 *${prefix}marcar2*
-║💥 *${prefix}marcar3*
+╠════📌〘 *IMAGENS* 〙📌════════════════
 ║
-╠══📌〘 IMAGENS 〙📌══
 ║
-║💥 *${prefix}loli* [off]
-║💥 *${prefix}loli1*
-║💥 *${prefix}hentai*
-║💥 *${prefix}dono*
-║💥 *${prefix}porno*
-║💥 *${prefix}boanoite*
-║💥 *${prefix}bomdia*
-║💥 *${prefix}boatarde*
-║💥 *${prefix}mia [aleatórias]*
-║💥 *${prefix}rize [aleatórias]*
-║💥 *${prefix}minato [aleatórias]*
-║💥 *${prefix}boruto [aleatórias]*
-║💥 *${prefix}hinata [aleatórias]*
-║💥 *${prefix}sasuke [aleatórias]*
-║💥 *${prefix}sakura [aleatórias]*
-║💥 *${prefix}naruto [aleatórias]*
-║💥 *${prefix}lofi*
-║💥 *${prefix}malkova*
-║💥 *${prefix}canal*
-║💥 *${prefix}nsfwloli1*
-║💥 *${prefix}reislin*
+║💥 *${prefix}alerta*
+║💥 *${prefix}loli (manda uma loli)*
+║💥 *${prefix}loli1 (FBI)*
+║💥 *${prefix}hentai (analise)*
+║💥 *${prefix}boanoite (manda uma img de boa noite)*
+║💥 *${prefix}bomdia (manda uma img de bom dia)*
+║💥 *${prefix}boatarde (manda uma img de boa tarde)*
+║💥 *${prefix}rize (imgs anime aleatórias)*
+║💥 *${prefix}minato (imgs do minato aleatórias)*
+║💥 *${prefix}boruto (imgs do boruto aleatórias)*
+║💥 *${prefix}hinata (imgs da hinata aleatórias)*
+║💥 *${prefix}sasuke (imgs do sasuke aleatórias)*
+║💥 *${prefix}sakura (imgs da sakura aleatórias)*
+║💥 *${prefix}naruto (imgs do naruto aleatórias)*
+║💥 *${prefix}lofi (img de lofi)*
+║💥 *${prefix}meme (manda um meme bem cringe)*
+║💥 *${prefix}darkjokes (shitposts)*
+║💥 *${prefix}toimg (transforma fig em img)*
+║💥 *${prefix}animecry (figurinha de loli chorando)*
 ║
-╠══📌〘 COMANDO PARA BAIXAR VIDEOS/MUSICAS YT 〙📌══
+║
+╠════📌〘 *COMANDO PARA BAIXAR VIDEOS/MUSICAS YT* 〙📌════════════════
+║
 ║
 ║💥 *${prefix}ytmp4 (link da musica/video)*
+║💥 *CASO QUEIRA TRANSFORMAR O VIDEO EM MUSICA USE O COMANDO ABAIXO*
+║💥 *${prefix}tomp3 (transforma video em musica)*
 ║
-╠══📌〘 INTELIGÊNCIA ARTIFICIAL 〙📌══
+║
+╠════📌〘 *INTELIGENCIA ARTIFICIAL SIMI* 〙📌════════════════
+║
 ║
 ║💥 *${prefix}simih 1 (para ativar)*
 ║💥 *${prefix}simih 0 (para desativar)*
 ║💥 *${prefix}simi (sua mensagem)*
 ║
-╠══📌〘 EM PRODUÇÃO 〙📌══
 ║
-║💥 *${prefix}gado*
-║💥 *${prefix}dbz*
-║💥 *${prefix}gtts loli*
-║💥 *${prefix}hidegp*
-║💥 *${prefix}grupos
-║💥 *${prefix}antinazismo
-║💥 *${prefix}it 1/0
+╠════📌〘 *SÓ PREMIUMS* 〙📌════════════════
 ║
-╠══📌〘 SÓ PREMIUM 〙📌══
 ║
+║💥 *${prefix}daftarvip (para virar premium)*
 ║💥 *${prefix}dado (não é um puxa dados)*
 ║💥 *${prefix}cekvip*
 ║💥 *${prefix}premiumlist*
 ║💥 *${prefix}delete*
 ║💥 *${prefix}modapk*
 ║💥 *${prefix}indo10*
-║💥 *${prefix}daftarvip [para virar Premium]*
 ║💥 *${prefix}qrcode*
 ║💥 *${prefix}chentai*
 ║💥 *${prefix}pack*
 ║💥 *${prefix}destrava*
 ║
-╠══📌〘 GRUPO 〙📌══
 ║
-║💥 *${prefix}banir*
+╠════📌〘 *GRUPOS* 〙📌════════════════
+║
+║
+║💥 *${prefix}banir [@] (bane o @ do gp)*
+║💥 *${prefix}add [@] (adiciona o @ no gp)*
+║💥 *${prefix}promover [@] (dá adm pro @)*
+║💥 *${prefix}rebaixar [@] (tira o adm do @)*
+║💥 *${prefix}admins (mostra os adm do grupo)*
+║💥 *${prefix}antilink [1/0] (bane quem manda link ADM)*
+║💥 *${prefix}antiracismo [on/off] (bane quem for racista)*
+║💥 *${prefix}linkgp (precisar ser ADM)*
+║💥 *${prefix}gay [@] (mostra a % gay do @)*
 ║💥 *${prefix}leveling [on/off]*
 ║💥 *${prefix}level*
-║💥 *${prefix}add*
-║💥 *${prefix}promover*
-║💥 *${prefix}setfoto [na legenda]*
-║💥 *${prefix}setname [texto]*
-║💥 *${prefix}rebaixar*
-║💥 *${prefix}admins*
-║💥 *${prefix}marcar*
-║💥 *${prefix}marcar2*
-║💥 *${prefix}marcar3*
-║💥 *${prefix}bemvindo [1/0]*
-║💥 *${prefix}grupoinfo*
-║💥 *${prefix}bomdia*
-║💥 *${prefix}boatarde*
-║💥 *${prefix}boanoite*
-║💥 *${prefix}setdesc*
-║💥 *${prefix}bug [sua mensagem]*
+║💥 *${prefix}setnome (muda o nome do grupo ADM)*
+║💥 *${prefix}setfoto (muda a foto do grupo ADM)*
+║💥 *${prefix}marcar (marca todos os membros)*
+║💥 *${prefix}marcar2 (marca todos os membros)*
+║💥 *${prefix}marcar3 (marca todos os membros)*
+║💥 *${prefix}bemvindo [1/0] (ativa msg de bem vindo no grupo)*
+║💥 *${prefix}bomdia (manda uma img de bom dia)*
+║💥 *${prefix}boatarde (manda uma img de boa tarde)*
+║💥 *${prefix}boanoite (manda uma img de boa noite)*
+║💥 *${prefix}setdesc (muda a descrição do grupo ADM)*
+║💥 *${prefix}bug [sua mensagem] (responde aleatoriamente)*
 ║
-╠══📌〘 ESPECIFICO DO BOT 〙📌══
 ║
-║💥 *${prefix}bug [sua mensagem]*
-║💥 *${prefix}clonar [@]*
-║💥 *${prefix}dono*
-║💥 *${prefix}ping [ver velocidade do bot]*
-║💥 *${prefix}termux*
-║💥 *${prefix}gay [@]*
-║💥 *${prefix}wame*
-║💥 *${prefix}map (nome)*
-║💥 *${prefix}setppbot (marque uma img)*
-║💥 *${prefix}pinterest (nome)*
-║💥 *${prefix}desligar (so para o dono)*
-║💥 *${prefix}timer*
+╠════📌〘 *ESPECIFICO DO BOT* 〙📌════════════════
 ║
-╠══📌〘 MAIS ALGUNS 〙📌══
 ║
-║💥 *${prefix}neko*
-║💥 *${prefix}ttp [texto]*
-║💥 *${prefix}testime*
-║💥 *${prefix}tomp3*
-║💥 *${prefix}modoanime [on/off]*
-║💥 *${prefix}modonsfw [on/off]*
-║💥 *${prefix}happymod [jogo/app]*
-║💥 *${prefix}rize*
-║💥 *${prefix}ytsearch*
-║💥 *${prefix}moddroid [jogo/app]*
-║💥 *${prefix}xvideos [titulo]**
-║💥 *${prefix}nomegp*
-║💥 *${prefix}darkjokes (shitposts)*
-║💥 *${prefix}animecry*
-║💥 *${prefix}gay1*
+║💥 *${prefix}dono (mostra o dono do bot)*
+║💥 *${prefix}owner (ctt do dono do bot)*
+║💥 *${prefix}ping (ver velocidade do bot)*
+║💥 *${prefix}termux (informações sobre o termux)*
+║💥 *${prefix}wame (link do wame do dono do bot)*
+║💥 *${prefix}timer [tempo / minuto,segundo,hora] (começa um timer)*
+║💥 *${prefix}bloqueados (vê os bloqueados pelo bot)*
+║💥 *${prefix}testime (inicia um contador de 10 segundos)*
+║💥 *${prefix}gay1 (mostra sua porcentagem gay)*
 ║💥 *${prefix}next*
-║💥 *${prefix}alerta*
-║💥 *${prefix}belle [img aleatórias]*
-║💥 *${prefix}pronomeneu [texto]*
-║💥 *${prefix}hobby*
-║💥 *${prefix}kiss
-║💥 *${prefix}analise
 ║
-╠══📌〘 COMANDOS DE VOZ 〙📌══
+║
+╠════📌〘 *BAIXAR APLICATIVOS* 〙📌════════════════
+║
+║
+║💥 *${prefix}happymod (jogo/app)*
+║💥 *${prefix}moddroid (jogo/app)*
+║💥 *${prefix}modapk (apenas premium)*
+║
+║
+╠════📌〘 *AUDIOS DO BOT* 〙📌════════════════
+║
 ║
 ║💥 *${prefix}ola*
 ║💥 *${prefix}bv*
-║💥 *${prefix}tchau*
 ║💥 *${prefix}bem*
 ║💥 *${prefix}a*
 ║💥 *${prefix}fdp*
@@ -193,35 +145,44 @@ const help = (prefix) => {
 ║💥 *${prefix}beat1*
 ║💥 *${prefix}banido*
 ║💥 *${prefix}edbanido*
+║💥 *${prefix}bah*
+║💥 *${prefix}canta ai bot*
+║💥 *${prefix}grita*
 ║
-╠══📌〘 OUTROS /2 〙📌══
 ║
-║💥 *${prefix}antilink [1/0]*
-║💥 *${prefix}brainly [pergunta]*
-║💥 *${prefix}antiracismo [on/off]*
+╠════📌〘 *COMANDOS DONO* 〙📌════════════════
+║
+║
+║💥 *${prefix}bc [texto]*
+║💥 *${prefix}bloquear [@]*
+║💥 *${prefix}desbloquear [@]*
+║💥 *${prefix}bloquear [@]*
+║💥 *${prefix}limpar*
+║💥 *${prefix}bc [ *texto* ]*
+║💥 *${prefix}setppbot*
+║💥 *${prefix}desligar*
 ║💥 *${prefix}setnomebot*
-║💥 *${prefix}meme*
 ║
-╠══📌〘 INTERATIVOS 〙📌══
 ║
-╠══NOTA »
-║Mandar a msg sem o prefixo
-╠════════════════════
+╠════📌〘 *NSFW* 〙📌════════════════
 ║
-║💥 *bah*
-║💥 *oii*
-║💥 *bv*
-║💥 *canta ai bot*
-║💥 *grita*
-║💥 *musica*
 ║
-╠══📌〘 OBITO NO CONTROLE 〙📌══
+║💥 *${prefix}modonsfw [on/off]*
+║💥 *${prefix}porno (só MIA no momento)*
+║💥 *${prefix}nsfwloli1 (imgs nsfw de loli)*
+║💥 *${prefix}nsfwloli (imgs nsfw de loli)*
+║💥 *${prefix}malkova (imgs da malkova aleatorias)*
+║💥 *${prefix}reislin (imgs da reislin)*
+║💥 *${prefix}belle (imgs aleatórias)*
+║
+║
+╠════📌〘 *OBITO NO COMANDO* 〙📌════════════════
+║
 ║
 ║ *NOME: OBITO MODDER*
 ║ *INSTA: bezzaokkk*
 ║ *YOUTUBE: https://youtube.com/c/obitomodder*
 ║
-║  *TMJ KIBA NÃO PPRT*
 ║
 ╚═〘 ⚡ OBITO BOT ⚡ 〙`
 }

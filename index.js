@@ -670,6 +670,16 @@ if (text.includes("placa"))
 		if (messagesC.includes("tmnc")){
 			client.updatePresence(from, Presence.composing)
 			reply("hm vou pensar no seu caso")
+  }
+
+    		if (messagesC.includes("gado")){
+    			client.updatePresence(from, Presence.composing)
+    			reply("vish, gado toma ban!")
+  }
+
+  		if (messagesC.includes("clb")){
+  			client.updatePresence(from, Presence.composing)
+  			reply("cala voce ai irmao")
 	}
 
 		if (messagesC.includes("vsfd")){
@@ -2413,7 +2423,7 @@ break
 				case 'text3d':
               	    if (args.length < 1) return reply('Onde está o texto, irmão??')
                     teks = `${body.slice(8)}`
-                    if (teks.length > 10) return client.sendMessage(from, 'Teksnya kepanjangan, Maksimal 10 kalimat', text, {quoted: mek})
+                    if (teks.length > 10) return client.sendMessage(from, '*TOMA SEU TEXTO 3D*', text, {quoted: mek})
                     buff = await getBuffer(`https://docs-jojo.herokuapp.com/api/text3d?text=${teks}`, {method: 'get'})
                     client.sendMessage(from, buff, image, {quoted: mek, caption: `${teks}`})
 			     	break
@@ -3584,7 +3594,7 @@ break
 					loli.getNSFWLoli(async (err, res) => {
 						if (err) return reply('❌ *ERRO* ❌')
 						buffer = await getBuffer(res.url)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: '*TOMA SUA LOLI RAPAZ*'})
 					})
 					break
 				case 'pronomeneu':

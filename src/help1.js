@@ -1,35 +1,22 @@
 const help1 = (prefix) => {
 
 	return `
-┣━━━━°⚡ ❬ *CRIAR* ❭ ⚡°━━━━┓
-┃
-┣⊱❥ *xd*
-┣⊱❥ *pinterest*
-┣⊱❥ *anjing*
-┣⊱❥ *loli2*
-┣⊱❥ *anime*
-┣⊱❥ *wolflogo2 <texto | texto>*
-┣⊱❥ *quotemaker <tx | wtrmk | tema>*
-┣⊱❥ *galaxtext*
-┣⊱❥ *textdark*
-┣⊱❥ *textblue*
-┣⊱❥ *lovemake*
-┣⊱❥ *stiltext*
-┣⊱❥ *ninjalogo*
-┣⊱❥ *party*
-┣⊱❥ *rtext*
-┣⊱❥ *water*
-┣⊱❥ *lionlogo <texto | texto>*
-┣⊱❥ *textscreen*
-┣⊱❥ *text3d*
-┣⊱❥ *epep*
-┣⊱❥ *marvelogo <texto | texto>*
-┣⊱❥ *snow <texto | texto>*
-┣⊱❥ *firetext*
-
-════════════════════
-*OBITO* 🤗
-*Digite .owner para mais info*
-════════════════════`
+╠════📌〘 *OUTROS COMANDOS* 〙📌════════════════
+║
+║
+║💥 *${prefix}pinterest [o que procura] (procura oq vc quiser no pinterest)*
+║💥 *${prefix}textscreen [mensagem] (responde coisas aleatorias)*
+║💥 *${prefix}text3d [mensagem] (ele transforma sua msg em um texto 3d)*
+║
+║
+╠════📌〘 *OBITO NO COMANDO* 〙📌════════════════
+║
+║
+║ *NOME: OBITO MODDER*
+║ *INSTA: bezzaokkk*
+║ *YOUTUBE: https://youtube.com/c/obitomodder*
+║
+║
+╚═〘 ⚡ OBITO BOT ⚡ 〙`
 }
 exports.help1 = help1
