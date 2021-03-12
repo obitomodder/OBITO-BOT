@@ -1,7 +1,7 @@
 const help1 = (prefix) => {
 
 	return `
-╠════📌〘 *OUTROS COMANDOS* 〙📌════════════════
+➢📌【*OUTROS COMANDOS*】📌
 ║
 ║
 ║💥 *${prefix}pinterest [o que procura] (procura oq vc quiser no pinterest)*
@@ -9,7 +9,7 @@ const help1 = (prefix) => {
 ║💥 *${prefix}text3d [mensagem] (ele transforma sua msg em um texto 3d)*
 ║
 ║
-╠════📌〘 *OBITO NO COMANDO* 〙📌════════════════
+➢📌【*OBITO NO COMANDO*】📌
 ║
 ║
 ║ *NOME: OBITO MODDER*
