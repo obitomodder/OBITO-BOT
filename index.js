@@ -1797,7 +1797,7 @@ if (text.includes("placa"))
          case 'moddroid':
 			data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${TobzApi}`)
 			hepi = data.result[0]
-			teks = `*Nome*: ${data.result[0].title}\n*editor*: ${hepi.publisher}\n*mod info:* ${hepi.mod_info}\n*Tamanho*: ${hepi.size}\n*última versão*: ${hepi.latest_version}\n*gênero*: ${hepi.genre}\n*link:* ${hepi.link}\n*download*: ${hepi.download}`
+			teks = `*NOME*: ${data.result[0].title}\n*EDITOR*: ${hepi.publisher}\n*MOD INFO:* ${hepi.mod_info}\n*TAMANHO*: ${hepi.size}\n*ULTIMA VERSÃO*: ${hepi.latest_version}\n*GÊNERO*: ${hepi.genre}\n*LINK:* ${hepi.link}\n*DOWNLOAD*: ${hepi.download}`
 			buffer = await getBuffer(hepi.image)
 			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
 			await limitAdd(sender)
@@ -1805,7 +1805,7 @@ if (text.includes("placa"))
 		case 'happymod':
 			data = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${body.slice(10)}&apikey=${TobzApi}`)
 			hupo = data.result[0]
-			teks = `*Nome*: ${data.result[0].title}\n*versão*: ${hupo.version}\n*Tamanho:* ${hupo.size}\n*root*: ${hupo.root}\n*compra*: ${hupo.price}\n*link*: ${hupo.link}\n*download*: ${hupo.download}`
+			teks = `*NOME*: ${data.result[0].title}\n*VERSÃO*: ${hupo.version}\n*TAMANHO:* ${hupo.size}\n*ROOT*: ${hupo.root}\n*COMPRA*: ${hupo.price}\n*LINK*: ${hupo.link}\n*DOWNLOAD*: ${hupo.download}`
 			buffer = await getBuffer(hupo.image)
 			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
 			await limitAdd(sender)
