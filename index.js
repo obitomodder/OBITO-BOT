@@ -224,7 +224,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Olá @${num.split('@')[0]}\nBem vindo ao grupo *${mdata.subject}*\n\nespero que goste irmão tmj`
+				teks = `Olá @${num.split('@')[0]}\nBem vindo ao grupo *${mdata.subject}*\n\nleia as regras, espero que goste do grupo!`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -1364,7 +1364,7 @@ if (text.includes("placa"))
     break
 
 				case 'semoji':
-					if (args.length < 1) return reply('onde está o emojis hum?')
+					if (args.length < 1) return reply('Cade o Emoji?')
 					ranp = getRandom('.png')
 					rano = getRandom('.webp')
 					teks = body.slice(8).trim()
@@ -1713,7 +1713,7 @@ if (text.includes("placa"))
 					await limitAdd(sender)
 					break
 				case 'ttp':
-					if (args.length < 1) return reply('Cadê o texto, hum?')
+					if (args.length < 1) return reply('Cade o texto?')
 					ranp = getRandom('.png')
 					rano = getRandom('.webp')
 					teks = body.slice(4).trim()
@@ -1746,7 +1746,7 @@ if (text.includes("placa"))
 				case 'ban':
 					if (!isOwner) return reply(mess.only.ownerB)
 					client.banUser (`${body.slice(7)}@c.us`, "add")
-					client.sendMessage(from, `você foi banido ${body.slice(7)}@c.us`, text)
+					client.sendMessage(from, `BANIDO ${body.slice(7)}@c.us`, text)
 					break
 				case 'playstore':
 					kuji = body.slice(7)
