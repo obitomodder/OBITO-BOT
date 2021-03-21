@@ -5,13 +5,13 @@ const help = (prefix) => {
 <══════════════════════>
 ┌─────────❶.❷────────
 ║
-║⚡〘 *INFORMAÇÕES* 〙⚡
+║⚡ *OLÁ @${num.split('@')[0]} !*
 ║
 ║
 ╠⚡ *OBITO BOT* ⚡
 ╠⚡ *𝐃𝐎𝐍𝐎:  ⃬⃗OBITO* ⚡
 ╠⚡ *𝐒𝐓𝐀𝐓𝐔𝐒: ON* ⚡
-║⚡
+║
 ║⚡ *DIGITE .help1 PARA VER ALGUNS OUTROS COMANDOS* ⚡
 ║
 ║
@@ -51,6 +51,7 @@ const help = (prefix) => {
 ║💥 *${prefix}darkjokes (shitposts)*
 ║💥 *${prefix}toimg (transforma fig em img)*
 ║💥 *${prefix}animecry (figurinha de loli chorando)*
+║💥 *${prefix}akeno (foto da akeno)*
 ║
 ║
 ➢📌【*COMANDO PARA BAIXAR VIDEOS/MUSICAS YT*】📌
@@ -170,12 +171,14 @@ const help = (prefix) => {
 ║
 ║
 ║💥 *${prefix}modonsfw [on/off]*
-║💥 *${prefix}porno (só MIA no momento)*
+║💥 *${prefix}porno (algumas fotos)*
 ║💥 *${prefix}nsfwloli1 (imgs nsfw de loli)*
 ║💥 *${prefix}nsfwloli (imgs nsfw de loli)*
 ║💥 *${prefix}malkova (imgs da malkova aleatorias)*
 ║💥 *${prefix}reislin (imgs da reislin)*
 ║💥 *${prefix}belle (imgs aleatórias)*
+║💥 *${prefix}belle1 (imgs aleatórias)*
+║💥 *${prefix}belle2 (imgs aleatórias)*
 ║
 ║
 ➢📌【*OBITO NO COMANDO*】📌
