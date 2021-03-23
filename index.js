@@ -224,7 +224,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Olá @${num.split('@')[0]}\nBem vindo ao grupo *${mdata.subject}*\n\nleia as regras, espero que goste do grupo!`
+				teks = `*SALVE @${num.split('@')[0]}*\n\n*SEJA BEM VINDO AO GRUPO ${mdata.subject}*\n\n*LEIA AS REGRAS SE NÃO É BAN!*`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -276,26 +276,26 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-					wait: '❬❗❭ Espere',
-					success: '️❬ ✔ ❭ Sucesso 🖤',
-					levelon: '❬ ✔ ❭ *leveling* *ativado*',
-					leveloff: ' ❬ X ❭  *leveling* *desativado*',
-					levelnoton: '❬ X ❭ *leveling não ativado*',
+					wait: '*[❗] ESPERA AI, TOMA UM CAFÉ ☕*',
+					success: '️*[✔] SUCESSO*',
+					levelon: '[✔] *LEVELING* *ATIVADO*',
+					leveloff: '[❌] *LEVELING* *DESATIVADO*',
+					levelnoton: '[❌] *LEVELING NÃO ATIVADO*',
 					levelnol: '*error* 0 °-°',
 					error: {
-				stick: '*Bem, falhe, tente novamente ^_^*',
-				Iv: 'Link invalido, mande um link valido!'
+				stick: '*FALHOU, TENTA NOVAMENTE AI!*',
+				Iv: '*LINK INVALIDO, CONFIRA O QUE ESTÁ ERRADO E MANDE CERTO!*'
 				},
 				only: {
-					group: '[❗] Este comando só pode ser usado em grupos! ❌',
-					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
-					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD Obito BOT*',
+					group: '*[❗] ESSE COMANDO SÓ PODE SER USADO EM GRUPOS*',
+					premium: '*[❗] ESSE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
+					mod: '*[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD OBITO BOT*',
 					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
-					ownerG: '[❗] Obito? Este é um recurso especial para o Obito ❌',
-					ownerB: '[❗] Obito? Este é um recurso especial para o Obito ❌',
+					ownerG: '*[❗] OBITO? ESSE É UM RECURSO SOMENTE PARA O OBITO*',
+					ownerB: '*[❗] OBITO? ESSE É UM RECURSO SOMENTE PARA O OBITO*',
 					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de Obito. Registre-se para fazer amizade com o bot Obito por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Obito|17\n\n──「 Obito BOT 」──`,
-					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
-					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
+					admin: '*[❗] ESSE COMANDO SÓ PODE SER USADO POR ADMINISTRADORES DO GRUPO!*',
+					Badmin: '*[❗] ESSE COMANDO SÓ PODE SER USADO QUANDO O BOT É ADM DO GRUPO!*',
 				}
 			}
 
@@ -355,7 +355,7 @@ async function starts() {
                 addLevelingXp(sender, amountXp)
                 if (requiredXp <= getLevelingXp(sender)) {
                     addLevelingLevel(sender, 1)
-                    await reply(`*「 LEVEL UP 」*\n\n➸ *Nome*: ${sender}\n➸ *XP*: ${getLevelingXp(sender)}\n➸ *Level*: ${getLevel} -> ${getLevelingLevel(sender)}\n\nParabéns!!  🎉🎉`)
+                    await reply(`*「 LEVEL UP 」*\n\n➸ *NOME*: ${sender}\n➸ *XP OBTIDO*: ${getLevelingXp(sender)}\n➸ *LEVEL*: ${getLevel} -> ${getLevelingLevel(sender)}\n\n*BOA 😎*`)
                 }
             } catch (err) {
                 console.error(err)
@@ -594,77 +594,109 @@ if (text.includes("placa"))
 	        if (messagesC.includes("https://chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
-		if (isGroupAdmins) return reply('vc é admin, então n irei te dar ban por usar links, rlx 🙂')
+		if (isGroupAdmins) return reply('*VOCÊ É ADM, ENTÃO NÃO VAI TOMAR BAN 🙂*')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		reply(`*LINK DETECTADO ${sender.split("@")[0]} VOCÊ SERA EXPULSO DO GRUPO EM 5 SEGUNDOS!*`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("1 segundo")
+			reply("*1 SEGUNDO*")
 		}, 4000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("2 segundos")
+			reply("*2 SEGUNDOS*")
 		}, 3000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("3 segundos")
+			reply("*3 SEGUNDOS*")
 		}, 2000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("4 segundos")
+			reply("*4 SEGUNDOS*")
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundos KKKKKKKK tchau otário 😔🤙")
+			reply("*EM 5 SEGUNDOS É BAN*")
+		}, 0)
+	}
+
+      		if (messagesC.includes("wa.me/")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return reply('*VOCÊ É ADM, ENTÃO NÃO VAI TOMAR BAN 🙂*')
+		client.updatePresence(from, Presence.composing)
+    if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
+		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
+		reply(`*ALVO OU LINK DETECTADO ${sender.split("@")[0]} VOCÊ SERA EXPULSO DO GRUPO EM 5 SEGUNDOS!*`)
+		setTimeout( () => {
+		  client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
+		}, 5000)
+		setTimeout( () => {
+		  client.updatePresence(from, Presence.composing)
+		  reply("*1 SEGUNDO*")
+		}, 4000)
+		setTimeout( () => {
+		  client.updatePresence(from, Presence.composing)
+		  reply("*2 SEGUNDOS*")
+    setTimeout( () => {
+  		client.updatePresence(from, Presence.composing)
+  		reply("*3 SEGUNDOS*")
+		}, 2000)
+		setTimeout( () => {
+  		client.updatePresence(from, Presence.composing)
+		  reply("*4 SEGUNDOS*")
+		}, 1000)
+		setTimeout( () => {
+		  client.updatePresence(from, Presence.composing)
+		  reply("*EM 5 SEGUNDOS É BAN*")
 		}, 0)
 	}
 
 		        if (messagesC.includes("https://")){
 		if (!isGroup) return
 		if (!isAntiLink) return
-		if (isGroupAdmins) return reply('vc é admin, então n irei te dar ban por usar links, rlx 🙂')
+		if (isGroupAdmins) return reply('*VOCÊ É ADM, ENTÃO NÃO VAI TOMAR BAN 🙂*')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		reply(`*LINK DETECTADO ${sender.split("@")[0]} VOCÊ SERA EXPULSO DO GRUPO EM 5 SEGUNDOS!*`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("1 segundo")
+			reply("*1 SEGUNDO*")
 		}, 4000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("2 segundos")
+			reply("*2 SEGUNDOS*")
 		}, 3000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("3 segundos")
+			reply("*3 SEGUNDOS*")
 		}, 2000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("4 segundos")
+			reply("*4 SEGUNDOS*")
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundos KKKKKKKK tchau otário 😔🤙")
+			reply("*EM 5 SEGUNDOS É BAN*")
 		}, 0)
 	}
 
 	if (messagesC.includes("fdp")){
 			client.updatePresence(from, Presence.composing)
-			reply("calma la irmão xinga a mae não")
+			reply("calma la mano, xinga a mae não")
 	}
 
 		if (messagesC.includes("corno")){
 			client.updatePresence(from, Presence.composing)
-			reply("teu paikkkk")
+			reply("teu pai kkkk")
 	}
 
 		if (messagesC.includes("tmnc")){
@@ -895,11 +927,11 @@ if (text.includes("placa"))
                     client.sendMessage(from, gcpf(prefix), text, { quoted: mek })
                     break
 				case 'ytmp4':
-					if (args.length < 1) return reply('Cadê o url, hum?')
+					if (args.length < 1) return reply('*CADE O URL? TEM QUE ESTAR NA FRENTE DO COMANDO*')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://st4rz.herokuapp.com/api/ytv2?url=${args[0]}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `*Title* : ${anu.title}`
+					teks = `*TITULO* : ${anu.title}\n\n *PARA TRANSFORMAR O VIDEO EM MUSICA, MARQUE ELE COM .tomp3*`
 					thumb = await getBuffer(anu.thumb)
 					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
@@ -911,11 +943,11 @@ if (text.includes("placa"))
 				case 'ytmp3':
 			    	if (!isPremium) return reply(mess.only.premium)
                    reply(mess.wait)
-					if (args.length < 1) return reply('Cadê o url, hum?')
+					if (args.length < 1) return reply('*CADE O URL? TEM QUE ESTAR NA FRENTE DO COMANDO*')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/yta?url=${args[0]}&apiKey=${apiKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `*Título* : ${anu.title}\n*Tamanho do arquivo* : ${anu.filesize}`
+					teks = `*TÍTULO* : ${anu.title}\n*TAMANHO DO ARQUIVO* : ${anu.filesize}`
 					thumb = await getBuffer(anu.thumb)
 					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					bufferyyy = await getBuffer(anu.result)
@@ -1418,7 +1450,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
 					case 'vipmenu':
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *#daftarvip* para comprar acesso Premium!' ,text, { quoted: mek })
+					if (!isPremium) return reply('VOCÊ NÃO É PREMIUM, ENTRE EM CONTATO COM O DONO OU DIGITE *.daftarvip* PARA ADQUIRIR O PREMIUM!' ,text, { quoted: mek })
 					client.sendMessage(from, vipmenu(prefix) , text, { quoted: mek })
 					break
 					case 'outros':
@@ -1543,9 +1575,9 @@ if (text.includes("placa"))
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
 					break
                   case 'qrcode':
-        			if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
+        			if (!isPremium) return reply('VOCÊ NÃO É PREMIUM, ENTRE EM CONTATO COM O DONO OU DIGITE *.daftarvip* PARA ADQUIRIR O PREMIUM!' ,text, { quoted: mek })
 					const tex = encodeURIComponent(body.slice(8))
-					if (!tex) return client.sendMessage(from, 'Digite um texto/url que deseja criar um código qr', text, {quoted: mek})
+					if (!tex) return client.sendMessage(from, '*DIGITE O TEXTO/URL QUE VOCÊ QUER CRIAR O QRCODE*', text, {quoted: mek})
 					const bufferr = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
 					client.sendMessage(from, bufferr, image, {quoted: mek})
 					break
@@ -1607,7 +1639,7 @@ if (text.includes("placa"))
                 break
 				case 'daftar':
 					client.updatePresence(from, Presence.composing)
-					if (args.length < 1) return reply(`Parameter Salah\nCommand : ${prefix}daftar nama|umur\nContoh : ${prefix}daftar ICHI|12`)
+					if (args.length < 1) return reply(`*COMANDO DESATIVADO*`)
 					var reg = body.slice(8)
 					var jeneng = reg.split("|")[0];
 					var umure = reg.split("|")[1];
@@ -1663,7 +1695,7 @@ if (text.includes("placa"))
 				case 'delete':
 				case 'del':
 				case 'd':
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
+					if (!isPremium) return reply('VOCÊ NÃO É PREMIUM, ENTRE EM CONTATO COM O DONO OU DIGITE *.daftarvip* PARA ADQUIRIR O PREMIUM!' ,text, { quoted: mek })
 					if (!isGroup)return reply(mess.only.group)
 					if (!isGroupAdmins)return reply(mess.only.admin)
 					client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
@@ -1924,7 +1956,7 @@ break
 
 					gay = body.slice(13)
 		   anu = await fetchJson(`https://arugaz.herokuapp.com/api/howgay`, {method: 'get'})
-		   hasil = `Veja os dados do Gay ${gay}\n\n\nPercentagem Gay : ${anu.persen}%\nAlerta!!! : gay, mas não cego`
+		   hasil = `*VEJA O QUANTO VC É GAY* ${gay}\n\n\n*PORCENTAGEM GAY: ${anu.persen}%*`
 		   reply(hasil)
 		   await limitAdd(sender)
 					break
@@ -2106,11 +2138,11 @@ break
 					}, 0) // 1000 = 1s,
 					break
 		        case 'gay':
-	            	if (args.length < 1) return reply('marque seus amigos!')
+	            	if (args.length < 1) return reply('*MARCA QUEM VOCÊ QUER QUE VEJA A %*')
 					rate = body.slice(1)
-					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
+					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39','99','1','10']
 					const kl = ti[Math.floor(Math.random() * ti.length)]
-					client.sendMessage(from, 'Como você é gay: *'+rate+'*\n\nSua porcentagem gay : '+ kl+'%', text, { quoted: mek })
+					client.sendMessage(from, '*O QUANTO VOCÊ É GAY**'+rate+'*\n\n*SUA PORCENTAGEM GAY: '+ kl+'%*', text, { quoted: mek })
 					break
                   case 'timer':
 				if (args[1]=="segundo") {var timer = args[0]+"000"
@@ -2332,14 +2364,14 @@ break
 			     	break
                 	case 'tomp3':
                 	client.updatePresence(from, Presence.composing)
-					if (!isQuotedVideo) return reply('Marque o video pfv')
+					if (!isQuotedVideo) return reply('*MARQUE O VIDEO*')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp4')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply('❌ Falha ao converter vídeo para mp3 ❌')
+						if (err) return reply('❌ *FALHA AO CONVERTER O VIDEO PARA MP3* ❌')
 						buffer = fs.readFileSync(ran)
 						client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', quoted: mek})
 						fs.unlinkSync(ran)
@@ -2767,7 +2799,7 @@ break
                 play = body.slice(5)
                 anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
                if (anu.error) return reply(anu.error)
-                 infomp3 = `*MUSICA ENCONTRADA!!!*\nTítulo : ${anu.result.title}\nUrl : ${anu.result.source}\nTamanho : ${anu.result.size}\n\n*ESPERE UM POUQUINHO, N SPAME O CHAT*`
+                 infomp3 = `*VIDEO ENCONTRADO!*\n*TÍTULO:* ${anu.result.title}\n*URL:* ${anu.result.source}\n*TAMANHO:* ${anu.result.size}\n\n*NÃO SPAMME ESSE COMANDO NO BOT*`
                 buffer = await getBuffer(anu.result.thumbnail)
                 lagu = await getBuffer(anu.result.url_audio)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
@@ -3350,7 +3382,7 @@ break
                     await limitAdd(sender)
 					break
 					case 'cekvip':
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
+					if (!isPremium) return reply('VOCÊ NÃO É PREMIUM, ENTRE EM CONTATO COM O DONO OU DIGITE *.daftarvip* PARA ADQUIRIR O PREMIUM!' ,text, { quoted: mek })
 					me = client.user
 					uptime = process.uptime()
 					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* Obito BOT\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* 🐊🚩\n*──────────────────*` , text, { quoted: mek, })
@@ -3556,7 +3588,7 @@ break
 				case 'dono':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.postimg.cc/k4cM8nFZ/19480114-c4ef-46ab-8040-1dc9c71794bb.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* OBITO MODDER\n*YOUTUBE:* https://www.youtube.com/c/obitomodder\n*WPP:* wa.me/+17981992106\n*INSTA:* @bezzaokkk\n\n\nESPERO QUE GOSTEM DO BOT 🚩️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* OBITO MODDER\n*YOUTUBE:* https://www.youtube.com/c/obitomodder\n*WPP:* wa.me/+5517981992106\n*INSTA:* @bezzaokkk\n\n\nESPERO QUE GOSTEM DO BOT 🚩️'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
