@@ -1,20 +1,22 @@
 const help = (prefix) => {
 	return `
-<══════════════════════>
-      *OBITO BOT*
-<══════════════════════>
 ┌─────────❶.❷────────
 ║
-║⚡ *OLÁ!*
 ║
-╠⚡ *OBITO BOT* ⚡
-╠⚡ *𝐃𝐎𝐍𝐎:  ⃬⃗OBITO* ⚡
+╠⚡ *OLÁ!* ⚡
+║
+╠⚡ *SEJA BEM-VINDO AO OBITO BOT* ⚡
+║
+╠⚡ *𝐃𝐎𝐍𝐎: OBITO MODDER* ⚡
+║
 ╠⚡ *𝐒𝐓𝐀𝐓𝐔𝐒: ON* ⚡
 ║
-║⚡ *DIGITE .help1 PARA VER OUTROS COMANDOS* ⚡
+╠⚡ *DIGITE .help1 PARA VER OUTROS COMANDOS* ⚡
+║
+╠⚡ *PARA ADQUIRIR PREMIUM USE O COMANDO .daftarvip* ⚡
 ║
 ║
-➢📌【*MAIS USADOS*】📌
+➢📌【 *COMANDOS MAIS USADOS* 】📌
 ║
 ║
 ║💥 *${prefix}f ou .figu (transforma img em fig)*
@@ -24,11 +26,11 @@ const help = (prefix) => {
 ║💥 *${prefix}lolih (manda uma loli)*
 ║💥 *${prefix}leens (ele faz um texto bugado)*
 ║💥 *${prefix}wait (mande uma lolih em img e ele achara da onde é)*
-║💥 *${prefix}ttp [texto] (ele faz uma fig com o texto)
-║💥 *${prefix}semoji [emoji] (ele transforma o emoji em fig)
+║💥 *${prefix}ttp [texto] (ele faz uma fig com o texto)*
+║💥 *${prefix}semoji [emoji] (ele transforma o emoji em fig)*
 ║
 ║
-➢📌【*IMAGENS*】📌
+➢📌【 *COMANDOS PARA IMAGENS* 】📌
 ║
 ║
 ║💥 *${prefix}alerta*
@@ -53,7 +55,7 @@ const help = (prefix) => {
 ║💥 *${prefix}akeno (foto da akeno)*
 ║
 ║
-➢📌【*COMANDO PARA BAIXAR VIDEOS/MUSICAS YT*】📌
+➢📌【 *COMANDOS PARA BAIXAR VIDEOS/MUSICAS* 】📌
 ║
 ║
 ║💥 *${prefix}play [link do video] (baixa o audio do video/musica)*
@@ -61,7 +63,7 @@ const help = (prefix) => {
 ║💥 *${prefix}tomp3 (transforma video em musica)*
 ║
 ║
-➢📌【*INTELIGENCIA ARTIFICIAL SIMI*】📌
+➢📌【 *INTELIGENCIA ARTIFICIAL SIMI* 】📌
 ║
 ║
 ║💥 *${prefix}simih 1 (para ativar)*
@@ -69,10 +71,10 @@ const help = (prefix) => {
 ║💥 *${prefix}simi (sua mensagem)*
 ║
 ║
-➢📌【*SÓ PREMIUMS*】📌
+➢📌【 *COMANDOS EXCLUSIVOS PREMIUM* 】📌
 ║
 ║
-║💥 *${prefix}daftarvip (para virar premium)*
+║💥 *${prefix}daftarvip (caso queira virar premium)*
 ║💥 *${prefix}dado (não é um puxa dados)*
 ║💥 *${prefix}cekvip*
 ║💥 *${prefix}premiumlist*
@@ -85,7 +87,7 @@ const help = (prefix) => {
 ║💥 *${prefix}destrava*
 ║
 ║
-➢📌【*GRUPOS*】📌
+➢📌【 *COMANDOS PARA GRUPOS* 】📌
 ║
 ║
 ║💥 *${prefix}banir [@] (bane o @ do gp)*
@@ -112,7 +114,7 @@ const help = (prefix) => {
 ║💥 *${prefix}bug [sua mensagem] (responde aleatoriamente)*
 ║
 ║
-➢📌【*ESPECIFICO DO BOT*】📌
+➢📌【 *ESPECIFICOS DO BOT* 】📌
 ║
 ║
 ║💥 *${prefix}dono (mostra o dono do bot)*
@@ -120,14 +122,14 @@ const help = (prefix) => {
 ║💥 *${prefix}ping (ver velocidade do bot)*
 ║💥 *${prefix}termux (informações sobre o termux)*
 ║💥 *${prefix}wame (link do wame do dono do bot)*
-║💥 *${prefix}timer [tempo / minuto,segundo,hora] (começa um timer)*
+║💥 *${prefix}timer [tempo / minuto,segundo,hora]*
 ║💥 *${prefix}bloqueados (vê os bloqueados pelo bot)*
 ║💥 *${prefix}testime (inicia um contador de 10 segundos)*
 ║💥 *${prefix}gay1 (mostra sua porcentagem gay)*
 ║💥 *${prefix}next*
 ║
 ║
-➢📌【*BAIXAR APLICATIVOS*】📌
+➢📌【 *BAIXAR APLICATIVOS* 】📌
 ║
 ║
 ║💥 *${prefix}happymod (jogo/app)*
@@ -135,7 +137,7 @@ const help = (prefix) => {
 ║💥 *${prefix}modapk (apenas premium)*
 ║
 ║
-➢📌【*AUDIOS DO BOT*】📌
+➢📌【 *AUDIOS DO BOT* 】📌
 ║
 ║
 ║💥 *${prefix}ola*
@@ -152,7 +154,7 @@ const help = (prefix) => {
 ║💥 *${prefix}grita*
 ║
 ║
-➢📌【*COMANDOS DONO*】📌
+➢📌【 *COMANDOS PARA O DONO* 】📌
 ║
 ║
 ║💥 *${prefix}bc [texto]*
@@ -166,7 +168,7 @@ const help = (prefix) => {
 ║💥 *${prefix}setnomebot*
 ║
 ║
-➢📌【*NSFW*】📌
+➢📌【 *NSFW* 】📌
 ║
 ║
 ║💥 *${prefix}modonsfw [on/off]*
@@ -180,7 +182,7 @@ const help = (prefix) => {
 ║💥 *${prefix}belle2 (imgs aleatórias)*
 ║
 ║
-➢📌【*OBITO NO COMANDO*】📌
+➢📌【 *OBITO REI DELAS 😎* 】📌
 ║
 ║
 ║ *NOME: OBITO MODDER*

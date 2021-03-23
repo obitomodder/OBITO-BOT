@@ -355,7 +355,7 @@ async function starts() {
                 addLevelingXp(sender, amountXp)
                 if (requiredXp <= getLevelingXp(sender)) {
                     addLevelingLevel(sender, 1)
-                    await reply(`*「 LEVEL UP 」*\n\n➸ *Nome*: ${sender}\n➸ *XP*: ${getLevelingXp(sender)}\n➸ *Level*: ${getLevel} -> ${getLevelingLevel(sender)}\n\nParabéns!!  🎉🎉`)
+                    await reply(`*「 LEVEL UP 」*\n\n➸ *NOME*: ${sender}\n➸ *XP OBTIDO*: ${getLevelingXp(sender)}\n➸ *LEVEL*: ${getLevel} -> ${getLevelingLevel(sender)}\n\n*BOA 😎*`)
                 }
             } catch (err) {
                 console.error(err)
@@ -1450,7 +1450,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
 					case 'vipmenu':
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *#daftarvip* para comprar acesso Premium!' ,text, { quoted: mek })
+					if (!isPremium) return reply('VOCÊ NÃO É PREMIUM, ENTRE EM CONTATO COM O DONO OU DIGITE *.daftarvip* PARA ADQUIRIR O PREMIUM!' ,text, { quoted: mek })
 					client.sendMessage(from, vipmenu(prefix) , text, { quoted: mek })
 					break
 					case 'outros':
@@ -1575,9 +1575,9 @@ if (text.includes("placa"))
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
 					break
                   case 'qrcode':
-        			if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
+        			if (!isPremium) return reply('VOCÊ NÃO É PREMIUM, ENTRE EM CONTATO COM O DONO OU DIGITE *.daftarvip* PARA ADQUIRIR O PREMIUM!' ,text, { quoted: mek })
 					const tex = encodeURIComponent(body.slice(8))
-					if (!tex) return client.sendMessage(from, 'Digite um texto/url que deseja criar um código qr', text, {quoted: mek})
+					if (!tex) return client.sendMessage(from, '*DIGITE O TEXTO/URL QUE VOCÊ QUER CRIAR O QRCODE*', text, {quoted: mek})
 					const bufferr = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
 					client.sendMessage(from, bufferr, image, {quoted: mek})
 					break
@@ -1695,7 +1695,7 @@ if (text.includes("placa"))
 				case 'delete':
 				case 'del':
 				case 'd':
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
+					if (!isPremium) return reply('VOCÊ NÃO É PREMIUM, ENTRE EM CONTATO COM O DONO OU DIGITE *.daftarvip* PARA ADQUIRIR O PREMIUM!' ,text, { quoted: mek })
 					if (!isGroup)return reply(mess.only.group)
 					if (!isGroupAdmins)return reply(mess.only.admin)
 					client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
@@ -2364,14 +2364,14 @@ break
 			     	break
                 	case 'tomp3':
                 	client.updatePresence(from, Presence.composing)
-					if (!isQuotedVideo) return reply('Marque o video pfv')
+					if (!isQuotedVideo) return reply('*MARQUE O VIDEO*')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp4')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply('❌ Falha ao converter vídeo para mp3 ❌')
+						if (err) return reply('❌ *FALHA AO CONVERTER O VIDEO PARA MP3* ❌')
 						buffer = fs.readFileSync(ran)
 						client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', quoted: mek})
 						fs.unlinkSync(ran)
@@ -3382,7 +3382,7 @@ break
                     await limitAdd(sender)
 					break
 					case 'cekvip':
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
+					if (!isPremium) return reply('VOCÊ NÃO É PREMIUM, ENTRE EM CONTATO COM O DONO OU DIGITE *.daftarvip* PARA ADQUIRIR O PREMIUM!' ,text, { quoted: mek })
 					me = client.user
 					uptime = process.uptime()
 					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* Obito BOT\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* 🐊🚩\n*──────────────────*` , text, { quoted: mek, })
@@ -3588,7 +3588,7 @@ break
 				case 'dono':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.postimg.cc/k4cM8nFZ/19480114-c4ef-46ab-8040-1dc9c71794bb.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* OBITO MODDER\n*YOUTUBE:* https://www.youtube.com/c/obitomodder\n*WPP:* wa.me/+17981992106\n*INSTA:* @bezzaokkk\n\n\nESPERO QUE GOSTEM DO BOT 🚩️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* OBITO MODDER\n*YOUTUBE:* https://www.youtube.com/c/obitomodder\n*WPP:* wa.me/+5517981992106\n*INSTA:* @bezzaokkk\n\n\nESPERO QUE GOSTEM DO BOT 🚩️'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
