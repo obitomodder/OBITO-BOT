@@ -11,7 +11,7 @@ const help = (prefix) => {
 ╠⚡ *𝐃𝐎𝐍𝐎:  ⃬⃗OBITO* ⚡
 ╠⚡ *𝐒𝐓𝐀𝐓𝐔𝐒: ON* ⚡
 ║
-║⚡ *DIGITE .help1 PARA VER ALGUNS OUTROS COMANDOS* ⚡
+║⚡ *DIGITE .help1 PARA VER OUTROS COMANDOS* ⚡
 ║
 ║
 ➢📌【*MAIS USADOS*】📌
@@ -23,7 +23,7 @@ const help = (prefix) => {
 ║💥 *${prefix}tts pt (transforma msg em audio)*
 ║💥 *${prefix}lolih (manda uma loli)*
 ║💥 *${prefix}leens (ele faz um texto bugado)*
-║💥 *${prefix}wait (mande uma lolih em img e ele tentara achar da onde é)*
+║💥 *${prefix}wait (mande uma lolih em img e ele achara da onde é)*
 ║💥 *${prefix}ttp [texto] (ele faz uma fig com o texto)
 ║💥 *${prefix}semoji [emoji] (ele transforma o emoji em fig)
 ║
@@ -56,8 +56,8 @@ const help = (prefix) => {
 ➢📌【*COMANDO PARA BAIXAR VIDEOS/MUSICAS YT*】📌
 ║
 ║
-║💥 *${prefix}ytmp4 (link da musica/video)*
-║💥 *PARA TRANSFORMAR O VIDEO EM MUSICA USE O COMANDO ABAIXO*
+║💥 *${prefix}play [link do video] (baixa o audio do video/musica)*
+║💥 *${prefix}ytmp4 [link do video] (baixa o video)*
 ║💥 *${prefix}tomp3 (transforma video em musica)*
 ║
 ║
