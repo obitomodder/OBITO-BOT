@@ -624,38 +624,6 @@ if (text.includes("placa"))
 		}, 0)
 	}
 
-      		if (messagesC.includes("wa.me/")){
-		if (!isGroup) return
-		if (!isAntiLink) return
-		if (isGroupAdmins) return reply('*VOCÊ É ADM, ENTÃO NÃO VAI TOMAR BAN 🙂*')
-		client.updatePresence(from, Presence.composing)
-    if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
-		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`*ALVO OU LINK DETECTADO ${sender.split("@")[0]} VOCÊ SERA EXPULSO DO GRUPO EM 5 SEGUNDOS!*`)
-		setTimeout( () => {
-		  client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 5000)
-		setTimeout( () => {
-		  client.updatePresence(from, Presence.composing)
-		  reply("*1 SEGUNDO*")
-		}, 4000)
-		setTimeout( () => {
-		  client.updatePresence(from, Presence.composing)
-		  reply("*2 SEGUNDOS*")
-    setTimeout( () => {
-  		client.updatePresence(from, Presence.composing)
-  		reply("*3 SEGUNDOS*")
-		}, 2000)
-		setTimeout( () => {
-  		client.updatePresence(from, Presence.composing)
-		  reply("*4 SEGUNDOS*")
-		}, 1000)
-		setTimeout( () => {
-		  client.updatePresence(from, Presence.composing)
-		  reply("*EM 5 SEGUNDOS É BAN*")
-		}, 0)
-	}
-
 		        if (messagesC.includes("https://")){
 		if (!isGroup) return
 		if (!isAntiLink) return
