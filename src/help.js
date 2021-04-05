@@ -28,6 +28,7 @@ const help = (prefix) => {
 ║💥 *${prefix}wait (mande uma lolih em img e ele achara da onde é)*
 ║💥 *${prefix}ttp [texto] (ele faz uma fig com o texto)*
 ║💥 *${prefix}semoji [emoji] (ele transforma o emoji em fig)*
+║💥 *${prefix}amor [@] (mostra sua porcentagem de amor com o @)
 ║
 ║
 ➢📌【 *COMANDOS PARA IMAGENS* 】📌
